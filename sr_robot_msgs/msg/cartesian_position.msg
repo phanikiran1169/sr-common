@@ -1,0 +1,7 @@
+string  tip_name
+float32 tip_pos_x
+float32 tip_pos_y
+float32 tip_pos_z
+float32 tip_orientation_rho
+float32 tip_orientation_theta
+float32 tip_orientation_sigma
