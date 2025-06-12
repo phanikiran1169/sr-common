@@ -57,6 +57,9 @@
             <mesh filename="file://$(find sr_description)/meshes/components/f_distal/bt_2p/f_distal_bt_2p.dae" />
           </xacro:if>
         </geometry>
+        <material name="BiotacGreen">
+          <color rgba="0.31 0.85 0.42 1.0" />
+        </material>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
