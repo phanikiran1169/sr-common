@@ -30,9 +30,9 @@
       <color rgba="0.21961 0.21961 0.21961 1.0" />
     </material>
   </xacro:macro>
-  <xacro:macro name="light_grey" >
-    <material name="light_grey">
-      <color rgba="0.90000 0.90000 0.90000 1.0" />
+  <xacro:macro name="black" >
+    <material name="black">
+      <color rgba="0.0 0.0 0.0 1.0" />
     </material>
   </xacro:macro>
   <xacro:if value="${mounting_plate}">
@@ -53,7 +53,7 @@
         <geometry name="${prefix}forearm_visual">
           <mesh filename="file://$(find sr_description)/meshes/components/forearm/forearm_${hand_version}.dae" scale="0.001 0.001 0.001" />
         </geometry>
-        <xacro:light_grey/>
+        <xacro:black/>
       </visual>
       <collision>
         <origin xyz="0 0 ${mounting_plate_offset}" rpy="0 0 0" />

@@ -30,9 +30,9 @@
       <color rgba="0.21961 0.21961 0.21961 1.0" />
     </material>
   </xacro:macro>
-  <xacro:macro name="grey" >
-    <material name="Grey">
-      <color rgba="0.90000 0.90000 0.90000 1.0" />
+  <xacro:macro name="black" >
+    <material name="Black">
+      <color rgba="0.0 0.0 0.0 1.0" />
     </material>
   </xacro:macro>
   <xacro:macro name="forearm" params="hand_type:=^ hand_version:=^ prefix:=^">
@@ -47,7 +47,7 @@
         <geometry name="${prefix}forearm_visual">
           <mesh filename="file://$(find sr_description)/meshes/components/forearm/forearm_${hand_version}.dae"/>
         </geometry>
-        <material name="Grey" />
+        <material name="Black" />
       </visual>
       <collision>
         <origin xyz="0 0 0.185" rpy="0 0 0" />

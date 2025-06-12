@@ -44,7 +44,7 @@
         <geometry name="${prefix}forearm_visual">
           <mesh filename="file://$(find sr_description)/meshes/components/forearm/forearm_${hand_version}.dae" scale="1.0 1.0 1.0" />
         </geometry>
-        <material name="Grey" />
+        <material name="Black" />
       </visual>
       <collision>
         <origin xyz="0 0 ${0.065+mounting_plate_offset}" rpy="0 0 0" />
